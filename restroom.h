@@ -2,14 +2,10 @@
 #define RESTROOM_H
 
 #include <QWidget>
-#include <QTimer>
-#include <QVBoxLayout>
 #include <QTime>
 #include <QLCDNumber>
-/*
-#include <QtMultimedia/QMediaPlayer>
-#include <QtMultimedia/QSoundEffect>
-*/
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 namespace Ui {
 class RestRoom;
@@ -25,6 +21,7 @@ public:
     void setTheme();
     QString ChooseBackgroundColor();
     QString ChooseButtonColor();
+
 private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
@@ -43,8 +40,9 @@ private:
     QString button;
     int color;
     QLCDNumber *lcd;
-    QVBoxLayout *vbox;
-    //QSoundEffect *bgm;
+
+    QMediaPlayer *bgmPlayer;
+    QAudioOutput *audioOutput;
 };
 
 #endif // RESTROOM_H

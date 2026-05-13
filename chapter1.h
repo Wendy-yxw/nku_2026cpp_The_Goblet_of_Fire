@@ -15,9 +15,6 @@ const int kIconSize = 36;
 const int kTopMargin = 70;
 const int kLeftMargin = 50;
 
-//const QString kIconReleasedStyle = " ";
-//const QString kIconClickedStyle = "background-color: rgba(255, 255, 12, 161)";
-//const QString kIconHintStyle = "background-color: rgba(255, 0, 0, 255)";
 
 const int kGameTimeTotal = 5*60 * 1000; // 总时间
 const int kGameTimerInterval = 300;

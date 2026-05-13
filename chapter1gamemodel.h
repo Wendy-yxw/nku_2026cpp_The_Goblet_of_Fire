@@ -1,7 +1,7 @@
 #ifndef CHAPTER1GAMEMODEL_H
 #define CHAPTER1GAMEMODEL_H
 #include <vector>
-// -------------------------------- //
+
 // 最大行和列数
 const int MAX_ROW = 10;
 const int MAX_COL = 15;
@@ -24,7 +24,6 @@ struct PaintPoint
     int y;
 };
 
-// -------------------------------- //
 
 class Chapter1GameModel
 {

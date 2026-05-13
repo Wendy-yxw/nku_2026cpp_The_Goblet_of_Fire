@@ -28,14 +28,6 @@ void Chapter1GameModel::startGame()
     for (int i = 0; i < 4; i++)
         hintArray[i] = -1;
 
-    /*std::vector<int> gameMap(MAX_ROW * MAX_COL, 0);
-    for (int i = 0; i < MAX_ROW * MAX_COL; i++) {
-        gameMap[i] = 0;
-        //qDebug()<<gameMap[i];
-    }
-    std::vector<int> hintArray(4, -1);//共两个点
-    */
-
     gameStatus=PLAYING;
 
     //填充方块标号

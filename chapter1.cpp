@@ -102,7 +102,6 @@ void Chapter1::VictorScene()
     victoryAnimation->start();
 }
 
-// ====================== 修复结束动画（防止闪退） ======================
 void Chapter1::GameOverScene()
 {
     int centerX=width()/2;
@@ -160,7 +159,7 @@ void Chapter1::handleLinkEffect(){
     update();
 }
 
-// ====================== 修复点击逻辑（卡死、无响应的元凶） ======================
+// ====================== 修复点击逻辑 ======================
 void Chapter1::onIconButtonPressed(){
     if (isLinking) return; // 正在连线时不能点击
 

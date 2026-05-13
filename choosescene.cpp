@@ -97,7 +97,6 @@ ChooseScene::ChooseScene(QWidget *parent)
     if (QFile::exists(imagePath)){
         QPixmap backgroundImage(imagePath);
         if (!backgroundImage.isNull()) {
-            //backgroundImage = backgroundImage.scaled(this->size(), Qt::KeepAspectRatioByExpanding);// 调整图片尺寸以适应窗口大小
             QPalette palette;
             palette.setBrush(this->backgroundRole(), QBrush(backgroundImage));
             this->setPalette(palette);
